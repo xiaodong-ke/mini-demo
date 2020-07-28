@@ -1,5 +1,5 @@
 <!-- 
-
+  复选框组件
  -->
 <checkbox-group bindchange="handleItemChange">
   <checkbox value="{{item.value}}" wx:for="{{list}}" wx:key="id">

@@ -1,38 +1,48 @@
 // components/Tabs/Tabs.js
 Component({
   /**
-   * 组件的属性列表
+   * 里面存放的是 要从父组件中接受的数据
    */
   properties: {
-
+    // 要接收的数据的名称
+    // aaa: {
+    //   // type 要接收的数据的类型
+    //   type: String,
+    //   // value 默认值
+    //   value: ""
+    // }
+    tabs: {
+      type: Array,
+      value: []
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    tabs: [
-      {
-        id: 0,
-        name: "首页",
-        isActive: true
-      },
-      {
-        id: 1,
-        name: "原创",
-        isActive: false
-      },
-      {
-        id: 2,
-        name: "分类",
-        isActive: false
-      },
-      {
-        id: 3,
-        name: "关于",
-        isActive: false
-      }
-    ]
+    // tabs: [
+    //   {
+    //     id: 0,
+    //     name: "首页",
+    //     isActive: true
+    //   },
+    //   {
+    //     id: 1,
+    //     name: "原创",
+    //     isActive: false
+    //   },
+    //   {
+    //     id: 2,
+    //     name: "分类",
+    //     isActive: false
+    //   },
+    //   {
+    //     id: 3,
+    //     name: "关于",
+    //     isActive: false
+    //   }
+    // ]
   },
 
   /**

@@ -28,6 +28,18 @@ Page({
       }
     ]
   },
+  // 自定义事件 用来接收子组件传递的数据的
+  handleItemChange(e) {
+    // console.log(e);
+    // 接收传递过来的参数
+    const { index } = e.detail;
+    // console.log(index);
+    let { tabs } = this.data
+    tabs.forEach((v, i) => i === index ? v.isActive = true : v.isActive = false);
+    this.setData({
+      tabs
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
